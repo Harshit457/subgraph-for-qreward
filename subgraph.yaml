@@ -25,8 +25,4 @@ dataSources:
       eventHandlers:
         - event: CampaignCreated(uint256,address,uint256,uint256,uint256)
           handler: handleCampaignCreated
-        - event: CampaignEnded(uint256,uint256)
-          handler: handleCampaignEnded
-        - event: PrizeClaimed(uint256,address,bytes32)
-          handler: handlePrizeClaimed
       file: ./src/contractgraph.ts
