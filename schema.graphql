@@ -3,4 +3,13 @@ type CampaignCreated @entity(immutable: true){
   campaignId: BigInt! # uint256
   company: Bytes! # address
   totalFunds: BigInt! # uint256
+  prizePerWinner: BigInt! # uint256
+  endTime: BigInt! # uint256
 }
+
+type PrizeClaimed @entity(immutable: true){
+  id:Bytes!
+  campaignId: BigInt! # uint256
+  winner: Bytes! # address
+}
+
